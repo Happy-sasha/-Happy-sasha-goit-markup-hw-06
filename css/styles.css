@@ -231,13 +231,14 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   align-items: center;
   background-color: #2e2f42;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(
-    ../images/hiro-fon.jpg);
+    ../images/hiro-fon-320-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  max-width: 320px;
+
+  padding-top: 72px;
+  padding-bottom: 72px;
   margin:0 auto
 }
 
@@ -249,12 +250,15 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 .hero-headline {
   color: #fff;
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.11; /* 111.111% */
   letter-spacing: 0.02em;
+  text-transform: capitalize;
   padding-bottom: 48px;
-  max-width: 496px;
+  padding-left: 72px;
+  padding-right: 72px;
+  max-width: 288px;
   margin:0 auto
   
 }
@@ -270,9 +274,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   cursor: pointer;
   display: block;
   padding: 16px 32px;
-  margin-left: 636;
   align-items: center;
-  gap: 10px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   min-width: 169px;
@@ -285,6 +287,54 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
+}
+
+
+@media screen and (min-width: 768px){
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(
+      ../images/hiro-fon-768-1x.jpg);
+    max-width: 768px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .hero-headline {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07; /* 107.143% */
+    letter-spacing: 0.02em;
+    padding-bottom: 36px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 496px;
+    margin:0 auto 
+  }
+}
+
+@media screen and (min-width: 1158px){
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(
+      ../images/hiro-fon-1158-1x.jpg);
+      max-width: 1440px;
+      padding-top: 188px;
+      padding-top: 188px;
+  }
+
+  .hero-headline {
+
+    padding-bottom: 48px;
+ 
+    max-width: 496px;
+  }
+    
+    .hero-button {
+      
+      margin-left: 636;
+      min-width: 169px;
+
+
+  }
 }
 
 .studio {
