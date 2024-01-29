@@ -227,6 +227,8 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
 }
 
+/* ----------------hearo------------------------------ */
+
 .hero {
   align-items: center;
   background-color: #2e2f42;
@@ -332,10 +334,10 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
       
       margin-left: 636;
       min-width: 169px;
-
-
   }
 }
+
+/* ----------------studio------------------------------ */
 
 .studio {
 }
@@ -419,11 +421,6 @@ display: none;
     width: 356px;
   }
   
- 
-
-
-  
-
 }
 
 @media screen and (min-width: 1158px){
@@ -462,14 +459,18 @@ display: none;
 
 }
 
+/* ----------------Team------------------------------ */
 .team {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
+  margin-left: auto;
+  margin-right: auto;
   
   border-radius: 0px 0px 4px 4px;
 }
@@ -487,7 +488,7 @@ display: none;
 
 .team-menu {
   background-color: #FFFFFF;
-  width: calc((100% - 72px) / 4);
+ width: 264px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -549,6 +550,34 @@ transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   gap: 24px;
   justify-content: center;
 }
+
+
+@media screen and (min-width: 768px){
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (min-width: 1158px){
+  .team-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+.team {
+  padding: 120px 0;
+}
+
+.team-menu {
+  width: calc((100% - 72px) / 4);
+}
+}
+/* ----------------portfolio------------------------------ */
 
 .portfolio {
   padding-top: 120px;
@@ -640,6 +669,8 @@ transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* ----------------futer------------------------------ */
 
 .footer {
   background-color: #2e2f42;
@@ -740,6 +771,8 @@ transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* ----------------modalka------------------------------ */
 
 .backdrop {
   position: fixed;
